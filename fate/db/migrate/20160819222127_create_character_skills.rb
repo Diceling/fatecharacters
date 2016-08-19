@@ -3,12 +3,13 @@ class CreateCharacterSkills < ActiveRecord::Migration[5.0]
     create_table :character_skills do |t|
       t.integer :character_id
       t.integer :athletics
+      t.integer :alertness
       t.integer :endurance
+      t.integer :presence
       t.integer :conviction
       t.integer :discipline
-      t.integer :weapons
-      
-      t.timestamps 
+
+      t.timestamps
     end
   end
 end
